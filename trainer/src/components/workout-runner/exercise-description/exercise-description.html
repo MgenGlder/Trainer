@@ -1,0 +1,19 @@
+<div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Description</h3>
+        </div>
+        <div class="panel-body">
+            {{description}}
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Steps</h3>
+        </div>
+        <div class="panel-body" [innerHTML]="steps">
+            <!-- We use the property binding [innerHTML] directly add markup to everything -->
+            <!-- {{steps}} This ends up being sanitized so we can't add html elements and styling to this. -->
+        </div>
+    </div>
+</div>

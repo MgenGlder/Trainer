@@ -1,0 +1,12 @@
+Removed the following code from tsconfig
+
+    "filesGlob": [
+        "**/*.ts",
+        "**/*.tsx",
+        "!node_modules/**"
+    ],
+    "files": [
+        "bootstrap.ts"
+    ]
+
+It was causing the ts compiler to give annoying warnings about experimental decorators.

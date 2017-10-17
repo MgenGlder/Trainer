@@ -1,0 +1,21 @@
+<audio #ticks="MyAudio" loop src="/static/audio/tick10s.mp3"></audio>
+<audio #nextUp="MyAudio" src="/static/audio/nextup.mp3"></audio>
+<audio #nextUpExercise="MyAudio" [src]="'/static/audio/' + nextUpSound"></audio>
+<audio #halfway="MyAudio" src="/static/audio/15seconds.wav"></audio>
+<audio #aboutToComplete="MyAudio" src="/static/audio/321.wav"></audio>
+<!-- Five <audio> tags, one for each 
+    Ticking audio: This audio produces the ticking sound and is started as soon
+    as the workout starts. Referred using the template variable.
+    'ticks'
+
+    Next up Audio and Exercise Audio: There are two audio tags that work together.
+    The first tag with the template variable as nextUp produces the "Next Up" sound.
+    And the actual exercise audio.
+    'nextUpExercise'
+
+    Halfway audio: The halfway audio plays halfway through the exercise.
+    'halfway'
+    
+    About to complete audio: This audio piece is played to denote the completion of an exercise.
+    'aboutToComplete'
+-->
